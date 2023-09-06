@@ -36,7 +36,7 @@ const validateToken = async (token: string) => {
     } catch (error) {
       console.error(
         "Error occured during token validation. Looks like environment variables haven't been set correctly, or the service token has expired",
-        error
+        error,
       );
     }
   }
@@ -51,7 +51,7 @@ export const withAPIAuthentication = (apiHandler: NextApiHandler) => {
       process.env.AUTHN_SERVICE_TOKEN
     ) {
       console.error(
-        "Missing environment variables, please make sure you have NEXT_PUBLIC_PANGEA_DOMAIN and AUTHN_SERVICE_TOKEN set in your .env file"
+        "Missing environment variables, please make sure you have NEXT_PUBLIC_PANGEA_DOMAIN and AUTHN_SERVICE_TOKEN set in your .env file",
       );
       return new Response("Unauthorized", { status: 401 });
     }

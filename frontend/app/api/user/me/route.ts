@@ -8,7 +8,7 @@ const apiHandler = async () => {
     }),
     {
       headers: { "content-type": "application/json" },
-    }
+    },
   );
 };
 

@@ -1,20 +1,20 @@
 # Next.js and Pangea AuthN Example
 
-## Introduction 
+## Introduction
 
 The Next.js and Pangea AuthN Example is a code repository that provides a simple way to add authentication to your Next.js web application using the Pangea AuthN service. It includes examples of how to implement user sign-up, sign-in, and sign-out functionality, how to protect client-side pages and API endpoints from public access. The example also includes instructions on setting up the Pangea AuthN service for your project and deploying your application. Most of the NextJS applications need authentication to protect specific pages and API endpoints from general public visibility. This example shows how you can easily add authentication to your NextJS app using the Pangea AuthN service.
 
 ## Features
 
 The Pangea AuthN service is not limited to the following features:
+
 - Sign up
 - Sign in
 - Sign out
 - Protecting client-side pages
 - Protecting API endpoints
 
-
-## Use Pangea AuthN 
+## Use Pangea AuthN
 
 ### Generating the sample app
 
@@ -27,7 +27,9 @@ The Pangea AuthN service is not limited to the following features:
   ```
 
   The script will ask you to give your new app a name. (ex: my-app)
+
 - `cd` into the newly created app folder
+
   ```bash
   cd my-app
   ```
@@ -56,7 +58,6 @@ There are certain parts of an application that developers want to hide from the 
 - Client components: Refer to the example in `/app/user/page.tsx` and wrap your components with the `pageWithAuthentication` higher-order component.
 
 - API endpoints: Refer to the example in `/app/api/user/me/route.ts` and wrap your API handler with the `withAPIAuthentication` helper function.
-
 
 ## How to Deploy
 
